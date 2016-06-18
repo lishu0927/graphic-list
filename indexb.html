@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>title</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			padding-top: 20px;
+			background: #ececec;
+		}
+		a {
+			color: #666;
+			text-decoration: none;
+			outline: none;
+		}
+		ol, ul, li {
+			list-style: none;
+		}
+		.common {
+			margin: 0 auto;
+			width: 90%;
+			position: relative;
+		}
+		.listbox {
+			display: block;
+			background:#f8f8f8 ;
+			width: 96%;
+			padding: 15px 2% 10px;
+			position: relative;
+			margin-bottom: 20px;
+			/*box-shadow: 0 0 3px 1px #b0b0b0;!*设置背景阴影*!*/
+		}
+		.listimg {
+			width: 100%;
+			height: 180px;
+			position: relative;
+			overflow: hidden;
+		}
+		.listimg img {
+			position: absolute;
+			width: 100%;
+			width: 270px; /*为适应iPhone4，注意图片的宽度不要超过276px*/
+			height: 180px;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%);
+			-webkit-transform: translate(-50%);
+		}
+		.listinfo a{
+			display: block;
+			font-size: 14px;
+			width: 94%;
+			margin-left: 3%;
+			margin-top: 10px;
+			line-height: 23px;
+			text-align: center;/*描述文字居中显示*/
+		}
+		@media (min-width:640px){  /*适应屏幕太宽，一行显示两个，可以去掉*/
+			.common {
+				width: 96%;
+			}
+			.listbox {
+				display: inline-block;
+				width: 47%;
+				padding: 15px 1% 10px;
+				float: left;
+			}
+			.listbox:nth-child(2n+1){
+				margin-right: 2%;
+			}
+			.listinfo a{
+				/*文字隐藏后添加省略号, 一定要有这3行*/
+				overflow: hidden;
+				white-space:nowrap;
+				text-overflow: ellipsis;
+			}
+
+		}
+	</style>
+</head>
+<body>
+<div class="common">
+	<ul>
+		<li class="listbox">
+			<div class="listimg">
+				<a href="#"><img src="image/1212_02.jpg" alt="" /></a>
+			</div>
+			<div class="listinfo">
+				<div class="listtitle"><a href="#">适合做图片类网站的特效适合做图片类网站的特效适合做图片类网站的特效</a></div>
+			</div>
+		</li>
+		<li class="listbox">
+			<div class="listimg">
+				<a href="#"><img src="image/1212_01.jpg" alt="" /></a>
+			</div>
+			<div class="listinfo">
+				<div class="listtitle"><a href="#">适合做图片类网站的特效</a></div>
+			</div>
+		</li>
+		<li class="listbox">
+			<div class="listimg">
+				<a href="#"><img src="image/1212_02.jpg" alt="" /></a>
+			</div>
+			<div class="listinfo">
+				<div class="listtitle"><a href="#">适合做图片类网站的特效</a></div>
+			</div>
+		</li>
+		<li class="listbox">
+			<div class="listimg">
+				<a href="#"><img src="image/1212_01.jpg" alt="" /></a>
+			</div>
+			<div class="listinfo">
+				<div class="listtitle"><a href="#">适合做图片类网站的特效</a></div>
+			</div>
+		</li>
+		<li class="listbox">
+			<div class="listimg">
+				<a href="#"><img src="image/1212_02.jpg" alt="" /></a>
+			</div>
+			<div class="listinfo">
+				<div class="listtitle"><a href="#">适合做图片类网站的特效</a></div>
+			</div>
+		</li>
+		<li class="listbox">
+			<div class="listimg">
+				<a href="#"><img src="image/1212_01.jpg" alt="" /></a>
+			</div>
+			<div class="listinfo">
+				<div class="listtitle"><a href="#">适合做图片类网站的特效</a></div>
+			</div>
+		</li>
+	</ul>
+</div>
+</body>
+</html>

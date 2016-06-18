@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>功能列表</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			background: #ececec;
+		}
+		a {
+			color: #666;
+			text-decoration: none;
+			outline: none;
+		}
+		ol, ul, li {
+			list-style: none;
+		}
+		.common {
+			margin: 0 auto;
+			width: 90%;
+			position: relative;
+		}
+		.listbox {
+			background:#f8f8f8 ;
+			width: 96%;
+			height: 80px;
+			position: relative;
+			margin: 10px auto;
+			padding: 10px 2%;
+		}
+		.listimg {
+			width: 120px;
+			height: 80px;
+			position: absolute;
+			overflow: hidden;
+		}
+		.listimg img {
+			width: 120px; /*为适应iPhone4，注意图片的宽度不要超过276px*/
+			height: 80px;
+		}
+		.listinfo{
+			width: 100%;
+
+		}
+		.listtitle{
+			padding-left: 125px;
+			padding-top:5px ;
+			position: relative;
+			overflow: hidden;
+		}
+		.listtitle a{
+			font-size: 14px;
+			width: 100%;
+			line-height: 24px;
+			text-indent: 1em;
+
+			overflow : hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;
+
+		}
+		@media (min-width:640px){  /*适应屏幕太宽，一行显示两个，可以去掉*/
+			.common {
+				width: 96%;
+			}
+			.listbox {
+				width: 45%;
+				float: left;
+			}
+			.listbox:nth-child(2n+1){
+				margin-right: 2%;
+			}
+		}
+	</style>
+</head>
+<body>
+<div class="common">
+	<ul>
+		<li class="listbox">
+			<div class="listimg">
+				<a href="./static/zl/zhuli.html"><img src="image/zhuli.png" alt="" /></a>
+			</div>
+			<div class="listinfo">
+				<div class="listtitle">
+					<a href="#"><strong style="color:red;">微信助力</strong>——分享朋友圈,发送好友,邀请好友为自己助力,快速增粉,提高活跃度</a>
+				</div>
+			</div>
+		</li>
+		<li class="listbox">
+			<div class="listimg">
+				<a href="./static/cj/choujiang.html"><img src="image/choujiang.png" alt="" /></a>
+			</div>
+			<div class="listinfo">
+				<div class="listtitle"><a href="#"><strong style="color:red;">欢乐抽奖箱</strong>——精致的H5抽奖界面,适配各种主题活动,支持分享增加抽奖次数等</a></div>
+			</div>
+		</li>
+		<li class="listbox">
+			<div class="listimg">
+				<a href="./static/jfsc/jifensc.html"><img src="image/jfsc.png" alt="" /></a>
+			</div>
+			<div class="listinfo">
+				<div class="listtitle"><a href="#"><strong style="color:red;">积分商城</strong>——积分商城,与CRM打通,支持积分兑换商品,积分明细查询,积分排名,签到赚积分等</a></div>
+			</div>
+		</li>
+		<li class="listbox">
+			<div class="listimg">
+				<a href="./static/lh/chailihe.html"><img src="image/chailihe.png" alt="" /></a>
+			</div>
+			<div class="listinfo">
+				<div class="listtitle"><a href="#"><strong style="color:red;">拆礼盒</strong>——分享活动到朋友圈,邀请好友为自己拆礼盒,赢取大奖,线下领奖,快速增粉,提高活跃度</a></div>
+			</div>
+		</li>
+		<li class="listbox">
+			<div class="listimg">
+				<a href="./static/mall/index.html"><img src="image/wsc.png" alt="" /></a>
+			</div>
+			<div class="listinfo">
+				<div class="listtitle"><a href="#"><strong style="color:red;">微信商城</strong>——线上线下、各大平台联动传播；完善的会员管理系统，会员等级，积分管理，积分兑换，导入导出等功能</a></div>
+			</div>
+		</li>
+		<li class="listbox">
+			<div class="listimg">
+				<a href="./static/tg/index.html"><img src="image/tg.png" alt="" /></a>
+			</div>
+			<div class="listinfo">
+				<div class="listtitle"><a href="#"><strong style="color:red;">微信团购</strong>——是一种新型便捷的移动网络团购方式。依托于微信公众平 台，为那些热爱团购，乐享优惠的微信好友主动推送应季的热门商品。</a></div>
+			</div>
+		</li>
+		<li class="listbox">
+			<div class="listimg">
+				<a href="./static/ms/index.html"><img src="image/ms.png" alt="" /></a>
+			</div>
+			<div class="listinfo">
+				<div class="listtitle"><a href="#"><strong style="color:red;">微信秒杀</strong>——最近流行的新型营销模式，以极低的价格吸引大量的消费者关注，带动店铺整体发展。</a></div>
+			</div>
+		</li>
+		
+		<li class="listbox">
+			<div class="listimg">
+				<a href="http://test.wx.e-cbest.com/SmashEgg/SmashEgg/MenuIndex?hash=cb&id=266"><img src="image/zjd.png" alt="" /></a>
+			</div>
+			<div class="listinfo">
+				<div class="listtitle"><a href="#"><strong style="color:red;">砸金蛋</strong>——可自定义中奖概率，支持多次中奖，支持背景音乐。</a></div>
+			</div>
+		</li>
+		
+		<li class="listbox">
+			<div class="listimg">
+				<a href="http://test.wx.e-cbest.com/Pop/PopIndex/Index?hash=cb"><img src="image/cx.png" alt="" /></a>
+			</div>
+			<div class="listinfo">
+				<div class="listtitle"><a href="#"><strong style="color:red;">优惠促销</strong>——平台所有促销信息都会展示在此处，并且支持领券等</a></div>
+			</div>
+		</li>
+		<li class="listbox">
+			<div class="listimg">
+				<a href="http://test.wx.e-cbest.com/Invite/Invite/JqjSubIndex?hash=cb"><img src="image/jdj.png" alt="" /></a>
+			</div>
+			<div class="listinfo">
+				<div class="listtitle"><a href="#"><strong style="color:red;">打劫家电节</strong>——最近流行的新型营销模式，以极低的价格吸引大量的消费者关注，带动店铺整体发展。</a></div>
+			</div>
+		</li>
+		<li class="listbox">
+			<div class="listimg">
+				<a href="http://test.wx.e-cbest.com/ZPTurntable/ZPTurntable/TurntableIndex?hash=cb&id=308"><img src="image/dzp.png" alt="" /></a>
+			</div>
+			<div class="listinfo">
+				<div class="listtitle"><a href="#"><strong style="color:red;">幸运大转盘</strong>——开启此功能，直接发布幸运大转盘活动，设置活动内容、奖项及中奖比例，带给粉丝完全不同的感受。</a></div>
+			</div>
+		</li>
+		<li class="listbox">
+			<div class="listimg">
+				<a href="http://test.wx.e-cbest.com/GuaKa/GuaKa/GuaKaIndex?hash=cb&id=338"><img src="image/ggk.png" alt="" /></a>
+			</div>
+			<div class="listinfo">
+				<div class="listtitle"><a href="#"><strong style="color:red;">刮刮卡</strong>——完美模拟彩票刮刮卡的方式，拥有刮彩票的真实感，轻松打造一个微信刮刮卡彩票机！</a></div>
+			</div>
+		</li>
+		
+		<li class="listbox">
+			<div class="listimg">
+				<a href="http://test.wx.e-cbest.com/GuaKa/GuaKa/GuaKaIndex?hash=cb&id=338"><img src="image/yyy.png" alt="" /></a>
+			</div>
+			<div class="listinfo">
+				<div class="listtitle"><a href="#"><strong style="color:red;">微摇红包</strong>——动态灵动的首页，互动式的摇一摇抽奖形式，让你的用户拥有极强的参与感与完美的互动感！简约而充实的界面排版，可以自定义置放广告等，兑奖流程完美毫无障碍，支持直接手机中奖兑奖！</a></div>
+			</div>
+		</li>
+	</ul>
+</div>
+</body>
+</html>
